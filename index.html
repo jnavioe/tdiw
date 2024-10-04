@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- completa -->
+        <meta charaset="utf-8"/>
+        <title> UAB/Enginyeria </title>
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
-            <!-- completa -->
+            <a href="http://www.uab.cat" target="_blank"><img src="./img/uab.png" width="200" alt="UAB" /></a>
+            <h1>Escola d'Enginyeria</h1>
+            <p>Benvinguts a l'Escola d'Enginyeria de la UAB</p>
+            <hr />
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
@@ -14,7 +18,17 @@
                 <h3>Graus disponibles: </h3>
             </header>
             <ul>
-                <!-- completa -->
+                <li><a href="http://www.uab.cat/grauEI">Enginyeria Informatica</a>
+                    <ul>
+                        <li>Menció Enginyeria del software</li>
+                        <li>Menció Enginyeria de computadors</li>
+                        <li>Menció Computació</li>
+                        <li><a href="mencions/TI/index.html">Menció Tennologies de la Informació</a></li>
+                    </ul>
+                </li>
+                <li>Enginyeria de Sistemes de Telecomunicació</li>
+                <li>Enginyeria de Electrònica de Telecomunicació</li>
+                <li>Enginyeria Química</li>
             </ul>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
@@ -24,7 +38,24 @@
             </header>
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
-                <!-- completa -->
+                Nom complet:<input type="text" name="nom"><br />
+                Contrasenya:<input type="password" name="contrasenya"><br />
+                Grau:
+                <select name="grau">
+                    <option value="1">Enginyeria Informatica</option>
+                    <option value="2">Menció Enginyeria del software</option>
+                    <option value="3">Menció Enginyeria de computadors</option>
+                    <option value="4">Menció Computació</option>
+                </select>
+                <p>Tria una mencio:</p>
+                <select name="mencio">
+                    <option value="1">Menció Enginyeria del software</option>
+                    <option value="2">Menció Enginyeria de computadors</option>
+                    <option value="3">Menció Computació</option>
+                    <option value="4">Menció Tennologies de la Informació</option>
+                </select>
+                <br /><br />
+                <input type="submit" value="Registrar">
             </form>
             <hr />
         </section>
@@ -34,12 +65,16 @@
                 <h3>Estadístiques de matriculació per graus</h3>
             </header>
             <table border="1">
-                <!-- completa -->
+                <tr><th colspan="2">Escola d'Enginyeria</th><th colspan="2">Ciències</th></tr>
+                <tr><td>Enginyeria de Sistemes de Telecomunicació</td> <td>150</td> <td rowspan="2">Física</td><td rowspan="2">100</td> </tr>
+                <tr> <td>Enginyeria Química</td> <td>300</td> </tr>
+                <tr> <td>Total</td> <td>750</td> <td>Total</td> <td>300</td> </tr>
             </table>
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
         <footer>
-            <!-- completa -->
+            <img src="img/campus-e.png" width="100" alt="UAB" />
+            <p>&copy; Universitat Autónoma de Barcelona</p>
         </footer>
     </body>
 </html>
